@@ -5,10 +5,11 @@ class Train
     public int TrainNumber;
     public DateTime Departure;
  
-    public void Info()
+    public void PrintInfo()
     {
         Console.WriteLine("Пункт назначения: {0}\nВремя отправление: {1}", Destination, Departure);
     }
+    
     public Train(string destination, int TrainNumber, DateTime departure)
     {
         this.Destination = destination;
@@ -16,6 +17,7 @@ class Train
         this.Departure = departure;
     }
 }
+
 class Program
 {
     static void Main(string[] args)
@@ -26,15 +28,18 @@ class Program
             new Train ("Кызыл", 12, new DateTime(2023, 4, 27, 21, 00, 0)),
             new Train ("Томск", 13, new DateTime(2023, 3, 14, 10, 40, 0)),
             new Train ("Красноярск", 14, new DateTime(2023, 3, 21, 18, 30, 0)),
-            new Train ("Новосибирск", 15, new DateTime(2023, 4, 21, 7, 00, 0))
+            new Train ("Новосибирск", 15, new DateTime(2023, 4, 21, 7, 00, 0)),
+            new Train ("Улан-Удэ", 16, new DateTime(2023, 4, 10, 19, 20, 0)),
+            new Train ("Екатеринбург", 17, new DateTime(2023, 4, 07, 12, 50, 0))
         };
         
-        Console.Write("Введите номер поезда - ");
+        Console.Write("Введите номер поезда: ");
+        
         int readline = Convert.ToInt32(Console.ReadLine());
         foreach(Train train in trainlist)
         {
             if (train.TrainNumber == readline)
-            train.Info();
+            train.PrintInfo();
         }
     }
 }
