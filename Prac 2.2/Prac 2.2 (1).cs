@@ -44,10 +44,9 @@ public class Program
 
     static void Main()
     {
-        Student myInfo= new Student("Maksimov", new DateTime(1991, 01, 30), 714, new int [5] {4, 3, 4, 5, 2});
+        Student myInfo = new Student("Maksimov", new DateTime(1991, 01, 30), 714, new int [5] {4, 3, 4, 5, 2});
 
         myInfo.Changeinfo(surname: "Charynchyk", dateOfBirth: new DateTime(2004, 11, 27), group: 621);
-        
         myInfo.Info();
     }
 }
