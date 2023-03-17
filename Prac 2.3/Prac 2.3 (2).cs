@@ -9,8 +9,8 @@ public class Worker
 
     public Worker(string name, string surname,int rate, int days)
     {
-        this.name = surname;
-        this.surname = name;
+        this.name = name;
+        this.surname = surname;
         this.rate = rate;
         this.days = days;
     }
