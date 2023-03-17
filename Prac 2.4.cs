@@ -2,7 +2,7 @@ namespace ConsoleApp1;
 
 public class Converter
 {
-    private Dictionary<char, int> converter = new Dictionary<char, int>()
+    private Dictionary <char, int> converter = new Dictionary <char, int>()
     {
         {'I', 1},
         {'V', 5},
@@ -32,6 +32,7 @@ public class Converter
             }
             prevValue = curValue;
         }
+        
         return result;
     }
 }
@@ -43,7 +44,9 @@ class Program
         Converter converter = new Converter();
 
         string romanNum = "MCMXCIV";
+        
         int integer = converter.Convert(romanNum);
+        
         Console.WriteLine("Римская цифра: " + romanNum);
         Console.WriteLine("Преобразование: " + integer);
     }
