@@ -38,9 +38,13 @@ class Program
 
         calculation.SetCalculationLine("Toyota");
         Console.WriteLine("Первая строка: " + calculation.GetCalculationLine());
+        
         calculation.SetLastSymbolCalculationLine('R');
+    
         Console.WriteLine("Строка после добавления: " + calculation.GetCalculationLine());
+        
         Console.WriteLine("Последний символ: " + calculation.GetLastSymbol());
+        
         calculation.DeleteLastSymbol();
         Console.WriteLine("Строка после удаления последнего символа: " + calculation.GetCalculationLine());
     }
