@@ -4,27 +4,27 @@ public class Counter
 {
     private int num;
 
-    public Counter()
+    public Counter() //констр
     {
         num = 10;
     }
 
-    public Counter(int initialnum) 
+    public Counter(int initialnum) // с произвольным
     {
         num = initialnum;
     }
 
-    public void Magnifications() 
+    public void Magnifications() //увеличение
     {
         num++;
     }
 
-    public void decrease() 
+    public void decrease() //уменьшение
     {
         num--;
     }
 
-    public int current
+    public int current //для получения текущего
     {
         get
         {
