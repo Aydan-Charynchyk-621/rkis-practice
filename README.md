@@ -1,1 +1,1 @@
-# Prac of RKIS
+# rkis practice
