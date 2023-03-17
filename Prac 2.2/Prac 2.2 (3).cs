@@ -37,6 +37,7 @@ class Program
         Console.WriteLine("Введите первое значение:");
         num.Num1 = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine("Введите второе значение:");
+        
         num.Num2 = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine($"{num.Num1} + {num.Num2} = {num.Num1 + num.Num2}");
         return 0;
